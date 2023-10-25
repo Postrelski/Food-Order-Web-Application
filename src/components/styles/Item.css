@@ -1,0 +1,33 @@
+.item_container{
+    border: 1px solid black;
+    width: 350px;
+    padding-bottom: 20px;
+    height: 600px;
+    /* margin: 20px; */
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    text-align: center;
+    background-color: black;
+    border-radius: 25px;
+    
+}
+
+.item_container img{
+    width: 350px;
+    border-radius: 25px;
+}
+
+.description{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.price{
+    color: orange;
+    background-color: rgb(49, 46, 26);
+    width: 90px;
+    margin: auto;
+    padding: 5px;
+}

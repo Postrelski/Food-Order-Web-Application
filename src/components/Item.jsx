@@ -1,8 +1,6 @@
 import Button from "./Button";
 import "./styles/Item.css"
 
-//images/mac-and-cheese.jpg
-
 function Item(props) {
   return (
     <div className="item_container">
@@ -10,7 +8,14 @@ function Item(props) {
       <h2>{props.title}</h2>
       <p className="price">{props.price}</p>
       <p className="description">{props.description}</p>
-      <Button/>
+      <Button 
+        title = {props.title}
+        price = {props.price}
+        description = {props.description}
+        onAddItem = {props.onAddItem}
+        id = {props.id}
+        key = {props.id}
+        />
     </div>);
 }
 

@@ -5,8 +5,9 @@ function Header(props) {
     props.modalFunction();
   }
 
+
   return <header>
-    <div>Logo</div>
+    <div >Logo</div>
     <a className="cart_button" onClick={clickMe}>
       <div>Cart ({props.count})</div>
     </a>

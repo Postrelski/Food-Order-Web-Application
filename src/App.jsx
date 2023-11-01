@@ -62,11 +62,15 @@ function App() {
     count += item.quantity
   ))
 
-  // function to switch on the modal
+  // function to switch on/off the modal
   const [modal, setModal] = useState(false);
   function modalFunction () {
     console.log('modal function in app js');
     setModal(!modal);
+  }
+
+  function clearCart () {
+    setFoodItems([]);
   }
 
   return (
@@ -94,7 +98,8 @@ function App() {
         modifyQuantityAdd = {modifyQuantityAdd}
         modifyQuantitySub = {modifyQuantitySub} 
         modal = {modal} 
-        modalFunction = {modalFunction}/>
+        modalFunction = {modalFunction}
+        clearCart ={clearCart} />
     </>
   );
 }

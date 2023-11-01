@@ -1,30 +1,35 @@
 import "./styles/CartScreen.css"
+import CheckOut from "./CheckOut";
 import { useState } from "react";
 
 function CartScreen(props) {
 
+  const [checkOut, setCheckOut] = useState(false)
+
+  // get the total amount of cost
   let total = 0;
   props.cartArray.map(item => (
     total += (item.quantity * item.price)
   ))
+  total = (Math.round(total * 100) / 100).toFixed(2);
 
+  // modifies the quantity of items
   function modifyQuantityAddHandler (e) {
     props.modifyQuantityAdd(e.target.id)
   }
-
   function modifyQuantitySubHandler (e) {
     props.modifyQuantitySub(e.target.id)
   }
 
+  // finds the total number of items and displays in the cart icon
   let itemsNum = 0;
   props.cartArray.map(item => (
     itemsNum += (item.quantity)
   ))
 
-
   const modalOn = props.modal;
 
-  // this should happen if 'CART' button is clicked
+  // this will happen if 'CART' button is clicked...
   let modal_style = ""
   let backdrop = ""
   if (modalOn) {
@@ -37,14 +42,21 @@ function CartScreen(props) {
     backdrop = ""
   }
 
+  // turns the greyed background on
   function switchModal (){
     props.modalFunction()
+    setCheckOut(false)
+  }
+
+  // removes the cart menu and creates the checkout menu
+  function checkOutHandler () {
+    setCheckOut(true)
   }
 
   return (
     <>
-      <div className={backdrop} onClick={switchModal}> </div>
-      <div className={modal_style}>
+      <div className={backdrop} onClick={switchModal}></div>
+      {!checkOut && <div className={modal_style}>
         <h2>Your Cart</h2>
         <div className="cart_items_container">
           {props.cartArray.map(item => (
@@ -67,10 +79,16 @@ function CartScreen(props) {
         <div className="total">{total}</div>
         <div className="cartBTNS">
           <button onClick={switchModal}>Close</button>
-          <button>Check Out</button>
+          <button onClick={checkOutHandler}>Check Out</button>
         </div>
-      
-      </div>
+      </div>}
+      {checkOut && 
+        <CheckOut 
+          modalFunction={switchModal}
+          modal_style={modal_style}
+          total={total}
+          clearCart = {props.clearCart}
+          />}
     </>
     
   );

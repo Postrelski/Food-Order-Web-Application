@@ -88,6 +88,7 @@ function CartScreen(props) {
           modal_style={modal_style}
           total={total}
           clearCart = {props.clearCart}
+          cartArray = {props.cartArray}
           />}
     </>
     

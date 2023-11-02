@@ -11,3 +11,19 @@
     color: black;
     padding: 20px;
 }
+
+.thank_you_BTN{
+    background-color: rgb(255, 200, 0);
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.thank_you_BTN_container{
+    text-align: right;
+}

@@ -60,7 +60,7 @@ function CartScreen(props) {
         <h2>Your Cart</h2>
         <div className="cart_items_container">
           {props.cartArray.map(item => (
-            <div key={item.id} id = {item.id}>
+            <div key={item.id} id = {item.id} className="cart_item_wrapper">
               <div className="cart_split">
                 <div>
                   <span>{item.title} </span>
@@ -76,10 +76,10 @@ function CartScreen(props) {
             </div>
           ))}
         </div>
-        <div className="total">{total}</div>
+        <div className="total">${total}</div>
         <div className="cartBTNS">
-          <button onClick={switchModal}>Close</button>
-          <button onClick={checkOutHandler}>Check Out</button>
+          <button className="closeBTN" onClick={switchModal}>Close</button>
+          <button className="checkoutBTN" onClick={checkOutHandler}>Check Out</button>
         </div>
       </div>}
       {checkOut && 

@@ -16,9 +16,6 @@ function CheckOut(props) {
     setThankYou(true);
   }
 
-  function clearHanlder () {
-    // props.clearCart()
-  }
 
   return ( 
     <div className={props.modal_style}>

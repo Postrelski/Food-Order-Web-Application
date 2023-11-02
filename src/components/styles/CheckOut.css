@@ -21,10 +21,40 @@
     text-align: right;
 }
 
-input {
-    /* width: 200px; */
+input{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 200px;
+    padding: 2px;
 }
 
 .check_out_btns input{
-    /* width: 200px; */
+    width: 100px;
+    background-color: rgb(255, 200, 0);
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.check_out_btns button{
+    width: 100px;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;   
+}
+
+label{
+    font-weight: bold;
 }

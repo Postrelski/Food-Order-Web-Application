@@ -10,3 +10,16 @@ header{
 .cart_button{
     cursor: pointer;
 }
+
+.logo{
+    width: 60px;
+    border-radius: 100px;
+    border: 1px solid yellow;
+}
+
+.logo_title{
+    margin-left: 15px;
+    position: absolute;
+    top: 110px;
+    font-weight: bold;
+}

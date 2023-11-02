@@ -65,7 +65,7 @@ function App() {
   // function to switch on/off the modal
   const [modal, setModal] = useState(false);
   function modalFunction () {
-    console.log('modal function in app js');
+    // console.log('modal function in app js');
     setModal(!modal);
   }
 

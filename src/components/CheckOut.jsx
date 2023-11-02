@@ -14,8 +14,8 @@ function CheckOut(props) {
 
     const form_data = new FormData(event.target);
     const customerData = Object.fromEntries(form_data.entries());
-    console.log(customerData)
-    console.log(props.cartArray)
+    // console.log(customerData)
+    // console.log(props.cartArray)
 
     // ------------------------------
     // Send http request to the "backend"

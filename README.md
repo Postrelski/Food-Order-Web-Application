@@ -9,3 +9,11 @@
 <img width="1488" alt="Screen Shot 2023-11-02 at 11 20 45 AM" src="https://github.com/Postrelski/React-Food-Order-App/assets/71254889/03933551-7d6e-4f51-b0c8-6908b2014d8f">
 
 <img width="1492" alt="Screen Shot 2023-11-02 at 11 20 53 AM" src="https://github.com/Postrelski/React-Food-Order-App/assets/71254889/f25bf7a9-b5c5-486f-a57c-427a09f09aa0">
+
+Data is extracted from backend JSON file:
+
+<img width="1055" alt="Screen Shot 2023-11-06 at 12 14 04 PM" src="https://github.com/Postrelski/React-Food-Order-App/assets/71254889/18a11174-c3f1-4161-98ab-519d23b5de0b">
+
+After order is submitted, personal info + cart info is sent to backend JSON file"
+
+<img width="1183" alt="Screen Shot 2023-11-06 at 12 14 22 PM" src="https://github.com/Postrelski/React-Food-Order-App/assets/71254889/6f43d674-3922-4b6b-a23e-7eb8d3f501c5">

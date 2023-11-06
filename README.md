@@ -1,5 +1,13 @@
 # React-Food-Order-App
 
+This is the front end app to a online food ordering service. It extracts data from a backend JSON file and creates then home page.
+User can add items to cart. Once the cart button is clicked, a modal window appears showing the cart content.
+User can future edit cart inside of the cart modal window using the "-" andf "+" icons.
+Once user click "continue", a different modal appears requesting personal information.
+Once user enters the personal information, a third modal appears saying "thank you, order complete".
+The personal info + the cart info is then sent to a JSON backend file.
+
+
 <img width="1499" alt="Screen Shot 2023-11-02 at 11 20 02 AM" src="https://github.com/Postrelski/React-Food-Order-App/assets/71254889/c254dbd6-49ac-440d-bcd1-ab21e6c5ea7c">
 
 <img width="1489" alt="Screen Shot 2023-11-02 at 11 20 28 AM" src="https://github.com/Postrelski/React-Food-Order-App/assets/71254889/d6fd4910-dbea-4c2d-8694-717c26517a95">

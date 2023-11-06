@@ -5,7 +5,7 @@ User can add items to cart. Once the cart button is clicked, a modal window appe
 User can futher edit the cart inside of the cart modal using the "-" andf "+" icons.<br>
 Once user click "continue", a different modal appears requesting personal information.<br>
 Once user enters personal information ad hits "submit," a third modal appears saying "thank you, order complete!" <br>
-Then the personal info + the cart info is sent to a JSON backend file.<br>
+Then the personal info + the cart info is sent to a JSON backend file (screen shots at bottom).<br>
 
 
 <img width="1499" alt="Screen Shot 2023-11-02 at 11 20 02 AM" src="https://github.com/Postrelski/React-Food-Order-App/assets/71254889/c254dbd6-49ac-440d-bcd1-ab21e6c5ea7c">
